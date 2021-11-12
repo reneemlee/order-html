@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Order a Melongram -->
+    </head>
+
+    <body>
+        <!-- Header for Melongram order page-->
+        <header>
+            <h1>Order a Melongram</h1>
+        </header>
+        
+        <!-- This section introduces the concept of Melongrams -->
+        <section>
+            <p> There's no better way to show a loved one you care than with a Melongram.
+
+                Each Melongram comes with a custom message printed on high-quality cardstock
+                and your choice of a hand-picked, premium melon.
+            </p>
+        </section>
+        
+        <!-- Header for melon options-->
+        <header>
+            <h2>Melon Options</h2>
+        </header>
+
+        <!-- This section shows types and prices of melon options-->
+        <section>
+            <p>Choose from one of these melons:</p>
+            <table>
+                <tr>
+                    <td>Watermelon</td> 
+                    <td>$1,200.00</td>
+                </tr>
+                <tr>
+                    <td>Canteloupe</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>    
+                    <td>Honeydew</td>
+                    <td>$1,750,00.00</td>
+                </tr>
+            </table>
+        </section>    
+         
+        <!-- Header for order form -->
+        <header>
+            <h2>Order Form</h2>
+        </header>
+
+        <!-- This section is a form for ordering melons-->
+        <section>
+            <form>
+                <!-- Asks user for their name-->
+                <div>
+                    <label for="input-name">Your name</label>
+                    <input type="text" name="name" id="input-name">
+                </div>
+                
+                <!-- Allows user to input the recipient of the melon -->
+                <div>
+                    <label for="input-recipient">Who are we sending this to?</label>
+                    <input type="text" name="recipient" id="input-recipient"><br>
+                </div>
+                
+                <!-- Allows user to choose type of melon to order-->
+                <fieldset>
+                    <legend>Choose a melon</legend>
+                    <div>
+                        <select name="melon">
+                            <option value="watermelon">Watermleon</option>
+                            <option value="canteloupe">Canteloupe</option>
+                            <option value="honeydew">Honeydew</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Allows user to choose delivery time (morning, evening, or any time) -->
+                <fieldset>
+                    <legend>When should we deliver?</legend>
+                    <div>   
+                        <input type="radio" name="time" value="am" id="input-morning">
+                        <label for="input-morning">Morning</label>
+                        <input type="radio" name="time" value="pm" id="input-evening">
+                        <label for="input-evening">Evening</label>
+                        <input type="radio" name="time" value="any" id="input-any-time">
+                        <label for="input-any-time">Any time</label>
+                    </div>
+                </fieldset>
+                
+                <!-- Allows user to input message -->
+                <div>
+                    <p>Enter your message:</p>
+                    <textarea name="message" id="input-message"></textarea>
+                </div>
+
+                <!-- Option to subscribe to newsletter with checkbox -->
+                <div>
+                    Subscribe to our newsletter
+                    <input type="checkbox" name="subscribe" value="yes" id="input-yes">
+                    <label for="input-yes">Yes</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </body>
+</html>
